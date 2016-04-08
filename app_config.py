@@ -27,7 +27,7 @@ PROJECT_FILENAME = 'guild_relationships_2016_npr'
 
 # The name of the repository containing the source
 REPOSITORY_NAME = 'guild-relationships-2016-npr'
-GITHUB_USERNAME = 'nprapps'
+GITHUB_USERNAME = 'benlk'
 REPOSITORY_URL = 'git@github.com:%s/%s.git' % (GITHUB_USERNAME, REPOSITORY_NAME)
 REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
 
@@ -38,19 +38,19 @@ ASSETS_SLUG = 'guild-relationships-2016-npr'
 """
 DEPLOYMENT
 """
-PRODUCTION_S3_BUCKET = 'apps.npr.org'
+PRODUCTION_S3_BUCKET = 'f.benlk.com/guild-relationships-2016'
 
-STAGING_S3_BUCKET = 'stage-apps.npr.org'
+STAGING_S3_BUCKET = ''
 
-ASSETS_S3_BUCKET = 'assets.apps.npr.org'
+ASSETS_S3_BUCKET = ''
 
 DEFAULT_MAX_AGE = 20
 
 RELOAD_TRIGGER = False
 RELOAD_CHECK_INTERVAL = 60
 
-PRODUCTION_SERVERS = ['cron.nprapps.org']
-STAGING_SERVERS = ['cron-staging.nprapps.org']
+PRODUCTION_SERVERS = ['']
+STAGING_SERVERS = ['']
 
 # Should code be deployed to the web/cron servers?
 DEPLOY_TO_SERVERS = False
@@ -92,7 +92,7 @@ DEBUG = True
 """
 COPY EDITING
 """
-COPY_GOOGLE_DOC_KEY = '13Npn_PYjXy9eLsVZSjETmYXNyw-NEqq0tP8M8LyztFU'
+COPY_GOOGLE_DOC_KEY = '1r8973SGrXkpoEPWcsgxmUdEZFTGZfzqQ7x5tFX-IYxw'
 COPY_PATH = 'data/copy.xlsx'
 
 """
@@ -105,13 +105,13 @@ SHARE_URL = 'http://%s/%s/' % (PRODUCTION_S3_BUCKET, PROJECT_SLUG)
 SERVICES
 """
 NPR_GOOGLE_ANALYTICS = {
-    'ACCOUNT_ID': 'UA-5828686-4',
+    'ACCOUNT_ID': 'UA-59485687-3',
     'DOMAIN': PRODUCTION_S3_BUCKET,
     'TOPICS': '' # e.g. '[1014,3,1003,1002,1001]'
 }
 
 VIZ_GOOGLE_ANALYTICS = {
-    'ACCOUNT_ID': 'UA-5828686-75'
+    'ACCOUNT_ID': 'UA-59485687-3'
 }
 
 """

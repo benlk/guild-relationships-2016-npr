@@ -18,7 +18,7 @@
 <section id="content">
     <div class="container">
         <div class="row">
-            <div id="main-content" class="col-md-8">
+            <div id="details" class="">
 
                 <h1>{{ COPY.content.project_name }}</h1>
 
@@ -31,11 +31,16 @@
                 </div>
 
                 <h2 class="knockout-example">Example COPY list</h2>
-                <dl>
-                    {% for row in COPY.example_list %}
-                    <dt>{{ row.term }}</dt><dd>{{ row.definition }}</dd>
+                <ul>
+                    {% for row in COPY.people %}
+                    <li class="{{ row.side }}">
+                        <span class="name">{{ row.name }}</span>
+                        <span class="actor">({{ row.actor }})</span>
+                        {{ row.description }}
+                        <!-- tktk the relationships they have -->
+                    </li>
                     {% endfor %}
-                </dl>
+                </ul>
 
                 <h2 class="knockout-example">JST example</h2>
                 <p id="template-example"></p>
